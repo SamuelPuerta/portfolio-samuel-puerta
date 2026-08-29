@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --color-base: #050705;
+  --color-surface: #0a0e0b;
+  --color-border: #1b241e;
+  --color-primary: #e7f2ec;
+  --color-muted: #869a8e;
+  --color-green: #43e37a;
+  --color-green-dim: #2a9c55;
+  --color-purple: #b490f2;
+  --color-purple-dim: #8465b8;
+}
+
+@theme inline {
+  --color-base: var(--color-base);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+  --color-primary: var(--color-primary);
+  --color-muted: var(--color-muted);
+  --color-accent-green: var(--color-green);
+  --color-accent-green-dim: var(--color-green-dim);
+  --color-accent-purple: var(--color-purple);
+  --color-accent-purple-dim: var(--color-purple-dim);
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+  border-radius: 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-base);
+  position: relative;
+}
+
+::selection {
+  background-color: rgba(67, 227, 122, 0.25);
+}
+
+/* thin terminal-style scrollbar */
+html {
+  scrollbar-color: var(--color-border) var(--color-base);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border: 2px solid var(--color-base);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-green-dim);
+}
+
+/* CRT: faint scanlines + vignette + slow drift, purely decorative */
+.crt::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(215, 228, 220, 0.02) 0px,
+    rgba(215, 228, 220, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  animation: scan-drift 9s linear infinite;
+}
+.crt::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 90% 70% at 50% 0%,
+    rgba(67, 227, 122, 0.05),
+    transparent 60%
+  ),
+  radial-gradient(ellipse 140% 100% at 50% 100%, rgba(0, 0, 0, 0.65), transparent 55%);
+}
+@keyframes scan-drift {
+  from { background-position-y: 0; }
+  to { background-position-y: 120px; }
+}
+
+/* phosphor glow for accent text */
+.glow-green {
+  text-shadow: 0 0 10px rgba(67, 227, 122, 0.25);
+}
+.glow-purple {
+  text-shadow: 0 0 10px rgba(180, 144, 242, 0.25);
+}
+
+/* Linux TTY block cursor */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.cursor-block::after {
+  content: "▊";
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--color-green);
+  animation: blink 1s step-end infinite;
+}
+
+/* Staggered boot-sequence line reveal */
+@keyframes boot-in {
+  from { opacity: 0; transform: translateX(-3px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.boot-line {
+  opacity: 0;
+  animation: boot-in 0.3s ease-out forwards;
+}
+
+/* details/summary chevron reset for ls -la rows */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
