@@ -7,17 +7,17 @@ export function MountainSkyline({ className = "" }: { className?: string }) {
       className={className}
     >
       <path
-        d="M0 220 L140 90 L230 160 L340 40 L430 140 L520 70 L610 200 L700 60 L790 150 L880 20 L980 130 L1080 80 L1200 180 L1200 220 Z"
+        d="M0 220 L140 60 L230 120 L340 10 L430 100 L520 40 L610 170 L700 25 L790 110 L880 0 L980 95 L1080 45 L1200 140 L1200 220 Z"
         fill="none"
         stroke="#2a9c55"
-        strokeWidth="1.5"
+        strokeWidth="5"
         opacity="0.5"
       />
       <path
-        d="M0 220 L180 130 L300 190 L420 100 L560 200 L680 110 L820 195 L950 100 L1080 170 L1200 130 L1200 220 Z"
+        d="M0 220 L180 90 L300 150 L420 65 L560 165 L680 75 L820 155 L950 70 L1080 130 L1200 95 L1200 220 Z"
         fill="none"
         stroke="#8465b8"
-        strokeWidth="1.5"
+        strokeWidth="10"
         opacity="0.35"
       />
       <circle cx="880" cy="20" r="3" fill="#43e37a" opacity="0.6" />
