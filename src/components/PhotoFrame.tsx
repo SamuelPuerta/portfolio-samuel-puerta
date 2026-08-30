@@ -10,7 +10,7 @@ export function PhotoFrame({
   className?: string;
 }) {
   const [failed, setFailed] = useState(false);
-  const src = failed ? "/avatar-placeholder.svg" : "/profile.jpg";
+  const src = failed ? "/avatar-placeholder.svg" : "/profile.jpeg";
 
   if (size === "sm") {
     return (
@@ -39,7 +39,7 @@ export function PhotoFrame({
         <span className="h-1.5 w-1.5 rounded-full bg-accent-green" />
         <span className="text-[11px] text-muted">{label}</span>
       </div>
-      <div className="relative aspect-square overflow-hidden bg-surface">
+      <div className="relative overflow-hidden bg-surface" style={{ aspectRatio: "1066 / 1599" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={src}
