@@ -3,6 +3,8 @@
 Sitio de portafolio construido con Next.js (App Router) + TypeScript + Tailwind CSS,
 pensado para desplegarse en Vercel con el flujo del Laboratorio 1 de Cloud Computing (UdeA).
 
+Perfil de Desarrollador Backend & QA — Auxiliar de Programación en la SIU–UdeA.
+
 ## Estructura
 
 ```
@@ -21,12 +23,17 @@ Para actualizar contenido (agregar un proyecto, cambiar el stack, etc.) solo edi
 
 ## Foto de perfil
 
-El sitio busca automáticamente `public/profile.jpg`. Mientras no exista, se
+El sitio busca automáticamente `public/profile.jpeg`. Mientras no exista, se
 muestra un placeholder acorde a la estética (verde/morado sobre negro), tanto
 en el hero como en la miniatura del sidebar — no hace falta tocar código.
 
 1. Copia tu foto (idealmente cuadrada, 800×800px o más) a `public/profile.jpg`.
 2. Recarga la página — la foto reemplaza el placeholder automáticamente.
+
+## CV descargable
+
+El botón «descargar cv ↓» apunta a `public/cv.pdf`. Coloca tu CV en esa ruta
+para que el enlace funcione (el archivo no está versionado por convención).
 
 ## Desarrollo local
 

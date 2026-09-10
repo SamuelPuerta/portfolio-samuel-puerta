@@ -69,7 +69,7 @@ export function Sidebar() {
             <span className="cursor-block" />
           </a>
           <h2 className="mt-2.5 text-sm leading-relaxed text-muted">
-            Ingeniero de Sistemas
+            Desarrollador Backend & QA
             <br />
             backend · datos · automatización
           </h2>
@@ -79,7 +79,7 @@ export function Sidebar() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-green opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-green" />
             </span>
-            disponible para oportunidades
+            abierto a oportunidades · disponible
           </div>
 
           <nav aria-label="Secciones" className="mt-14 flex flex-col gap-1">

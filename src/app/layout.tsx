@@ -3,14 +3,14 @@ import "@fontsource-variable/jetbrains-mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Samuel Puerta Patiño — Ingeniero de Sistemas",
+  title: "Samuel Puerta Patiño — Desarrollador Backend & QA",
   description:
-    "Portafolio de Samuel Puerta Patiño, estudiante de Ingeniería de Sistemas en la UdeA. Desarrollo backend, automatización y análisis de datos.",
+    "Desarrollador de software backend y QA automation — Auxiliar de Programación en la SIU–UdeA. Java · Spring Boot · Python · Go · Docker · CI/CD.",
   metadataBase: new URL("https://samuelpuerta.vercel.app"),
   openGraph: {
-    title: "Samuel Puerta Patiño — Ingeniero de Sistemas",
+    title: "Samuel Puerta Patiño — Desarrollador Backend & QA",
     description:
-      "Desarrollo backend, automatización de procesos y análisis de datos. Java · Spring Boot · Python · Bash.",
+      "Desarrollo backend, automatización de procesos, testing y análisis de datos. Java · Spring Boot · Python · Go · Docker.",
     type: "website",
     locale: "es_CO",
   },

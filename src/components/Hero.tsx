@@ -3,10 +3,10 @@ import { PhotoFrame } from "./PhotoFrame";
 import { links } from "@/lib/data";
 
 const stats: [string, string][] = [
-  ["OS", "Ingeniería de Sistemas — 8° sem."],
-  ["Host", "Universidad de Antioquia"],
+  ["role", "Desarrollador Backend & QA"],
+  ["DEG", "Ingeniería de Sistemas — 9° sem. (UdeA)"],
   ["Kernel", "backend · automatización · datos"],
-  ["Shell", "Java · Spring Boot · Python"],
+  ["Shell", "Java · Spring Boot · Python · Go"],
   ["DE", "Auxiliar de Programación @ SIU-UdeA"],
   ["Locale", "es_CO — Medellín, Colombia"],
 ];
@@ -35,6 +35,12 @@ export function Hero() {
           >
             Samuel Puerta Patiño
           </h1>
+          <p
+            className="boot-line mt-2 text-base text-accent-purple sm:text-lg"
+            style={{ animationDelay: "160ms" }}
+          >
+            Desarrollador Backend · QA Automation · Análisis de Datos
+          </p>
 
           <dl className="mt-7 grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
             {stats.map(([key, value], i) => (
@@ -74,6 +80,14 @@ export function Hero() {
               className="border border-border px-5 py-3 text-primary hover:border-accent-purple hover:text-accent-purple transition-colors"
             >
               git clone samuel
+            </a>
+            <a
+              href={links.cv}
+              target="_blank"
+              rel="noreferrer"
+              className="border border-accent-purple px-5 py-3 text-accent-purple hover:bg-accent-purple hover:text-base transition-colors"
+            >
+              descargar cv ↓
             </a>
             <a
               href={`mailto:${links.email}`}

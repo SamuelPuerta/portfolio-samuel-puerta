@@ -118,39 +118,20 @@ export const projects: Project[] = [
     stack: ["Python", "Sockets", "TCP/UDP"],
     href: "https://github.com/SamuelPuerta/CCTV-SOCKETS-TCP-UDP",
   },
-  {
-    slug: "calculadora-vida",
-    name: "Calculadora De Vida",
-    status: "archivado",
-    category: "otros",
-    detail: "Utilidad de línea de comandos en Go, ejercicio de práctica para reforzar fundamentos del lenguaje y su tooling.",
-    stack: ["Go"],
-    href: "https://github.com/SamuelPuerta/CalculadoraDeVidaGolang",
-  },
-  {
-    slug: "alas-locas",
-    name: "AlasLocas CRUD",
-    status: "archivado",
-    category: "otros",
-    detail: "Aplicación CRUD para un negocio de comidas: creación, lectura, actualización y borrado sobre un catálogo, con interfaz web.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    href: "https://github.com/SamuelPuerta/AlasLocasCrud",
-  },
 ];
 
 export type SkillGroup = {
   label: string;
-  level: number; // 0-100, editorial signal not a formal metric
   items: string[];
 };
 
 export const skillGroups: SkillGroup[] = [
-  { label: "Backend", level: 85, items: ["Java", "Spring Boot", "REST", "JWT", "Maven"] },
-  { label: "Testing & QA", level: 75, items: ["JUnit5", "Mockito", "Cucumber", "Serenity BDD", "Selenium"] },
-  { label: "Datos & ML", level: 65, items: ["Python", "pandas", "XGBoost", "scikit-learn"] },
-  { label: "DevOps & Calidad", level: 65, items: ["Docker", "GitHub Actions", "SonarCloud/Qube", "JaCoCo"] },
-  { label: "Sistemas", level: 60, items: ["C", "Go", "pthreads", "sockets"] },
-  { label: "Bases de datos", level: 60, items: ["PostgreSQL", "MongoDB", "Flyway"] },
+  { label: "Backend", items: ["Java", "Spring Boot", "REST", "JWT", "Maven"] },
+  { label: "Testing & QA", items: ["JUnit5", "Mockito", "Cucumber", "Serenity BDD", "Selenium"] },
+  { label: "Datos & ML", items: ["Python", "pandas", "XGBoost", "scikit-learn"] },
+  { label: "DevOps & Calidad", items: ["Docker", "GitHub Actions", "SonarCloud/Qube", "JaCoCo"] },
+  { label: "Sistemas", items: ["C", "Go", "pthreads", "sockets"] },
+  { label: "Bases de datos", items: ["PostgreSQL", "MongoDB", "Flyway"] },
 ];
 
 export type ExperienceItem = {
@@ -168,7 +149,7 @@ export const experience: ExperienceItem[] = [
     current: true,
   },
   {
-    role: "Técnico de Sistemas",
+    role: "Técnico de Sistemas / Soporte IT",
     org: "Freelance / Independiente",
     period: "2020 — 2024",
   },
@@ -176,7 +157,7 @@ export const experience: ExperienceItem[] = [
 
 export const education: ExperienceItem[] = [
   {
-    role: "Ingeniería de Sistemas (8° semestre)",
+    role: "Ingeniería de Sistemas (9° semestre)",
     org: "Universidad de Antioquia",
     period: "2022 — actualidad",
     current: true,
@@ -197,4 +178,5 @@ export const links = {
   github: "https://github.com/SamuelPuerta",
   linkedin: "https://linkedin.com/in/samuel-puerta-7772a226b",
   email: "puertasamuel04@gmail.com",
+  cv: "/cv.pdf",
 };

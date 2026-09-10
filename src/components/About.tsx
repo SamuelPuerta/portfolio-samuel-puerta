@@ -3,8 +3,8 @@ import { SectionHeader, Prompt } from "./SectionHeader";
 import { Reveal } from "./Reveal";
 
 const facts: [typeof Coffee, string, string][] = [
-  [GraduationCap, "semestre", "8° · Ingeniería de Sistemas"],
-  [FolderGit2, "repos_públicos", "13 en GitHub"],
+  [GraduationCap, "semestre", "9° · Ingeniería de Sistemas"],
+  [FolderGit2, "repos_públicos", "14 en GitHub"],
   [MapPin, "ubicación", "Medellín, Colombia"],
   [Coffee, "combustible", "café, todos los días"],
 ];
@@ -24,9 +24,10 @@ export function About() {
         <Reveal className="max-w-2xl">
           <Prompt>cat about.md</Prompt>
           <p className="mt-5 text-[17px] leading-[1.85] text-primary">
-            Estudiante de{" "}
+            <span className="text-accent-green">Desarrollador de software</span>{" "}
+            backend y QA automation, cursando el último tramo de{" "}
             <span className="text-accent-green">Ingeniería de Sistemas</span>{" "}
-            en la Universidad de Antioquia, trabajando actualmente como{" "}
+            en la Universidad de Antioquia y trabajando actualmente como{" "}
             <span className="text-accent-purple">
               Auxiliar de Programación
             </span>{" "}

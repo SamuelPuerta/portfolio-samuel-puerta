@@ -9,8 +9,6 @@ import {
   GitFork,
   Grid3x3,
   Video,
-  Terminal,
-  UtensilsCrossed,
   ArrowUpRight,
   Folder,
 } from "lucide-react";
@@ -41,8 +39,6 @@ const icons: Record<string, typeof ServerCog> = {
   "synchronization-mechanisms": GitFork,
   "matrix-multiplication": Grid3x3,
   "cctv-sockets": Video,
-  "calculadora-vida": Terminal,
-  "alas-locas": UtensilsCrossed,
 };
 
 const categoryOrder: Category[] = ["backend", "qa", "sistemas", "otros"];
@@ -76,7 +72,7 @@ export function Projects() {
 
               <div className="mt-4 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {items.map((project, i) => {
-                  const Icon = icons[project.slug] ?? Terminal;
+                  const Icon = icons[project.slug] ?? ServerCog;
                   return (
                     <Reveal key={project.slug} delay={i * 60}>
                       <a

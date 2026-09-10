@@ -1,4 +1,4 @@
-import { Mail, GitBranch, Link2 } from "lucide-react";
+import { Mail, GitBranch, Link2, FileText } from "lucide-react";
 import { SectionHeader, Prompt } from "./SectionHeader";
 import { links } from "@/lib/data";
 import { MountainSkyline } from "./Decorative";
@@ -46,6 +46,15 @@ export function Contact() {
           >
             <GitBranch className="h-4 w-4" />
             github/SamuelPuerta
+          </a>
+          <a
+            href={links.cv}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 border border-accent-purple px-5 py-3 text-accent-purple hover:bg-accent-purple hover:text-base transition-colors"
+          >
+            <FileText className="h-4 w-4" />
+            descargar cv ↓
           </a>
         </div>
       </Reveal>
