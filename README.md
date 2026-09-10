@@ -13,9 +13,9 @@ src/
     layout.tsx      # fuentes (self-hosted vía @fontsource) y metadata
     page.tsx         # ensambla las secciones
     globals.css      # tokens de color/tipografía (tema "terminal")
-  components/         # Nav, Hero, About, StackBars, Projects, Experience, Contact
+  components/         # Sidebar, Hero, About, Experience, AppliedProject, Projects, StackBars, Education, Contact
   lib/
-    data.ts           # contenido editable: proyectos, stack, experiencia, educación
+    data.ts           # contenido editable: proyectos, stack, experiencia, educación, proyecto aplicado
 ```
 
 Para actualizar contenido (agregar un proyecto, cambiar el stack, etc.) solo edita
@@ -27,7 +27,7 @@ El sitio busca automáticamente `public/profile.jpeg`. Mientras no exista, se
 muestra un placeholder acorde a la estética (verde/morado sobre negro), tanto
 en el hero como en la miniatura del sidebar — no hace falta tocar código.
 
-1. Copia tu foto (idealmente cuadrada, 800×800px o más) a `public/profile.jpg`.
+1. Copia tu foto (idealmente cuadrada, 800×800px o más) a `public/profile.jpeg`.
 2. Recarga la página — la foto reemplaza el placeholder automáticamente.
 
 ## CV descargable

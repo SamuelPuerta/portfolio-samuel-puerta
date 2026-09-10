@@ -1,10 +1,9 @@
-import { Coffee, MapPin, GraduationCap, FolderGit2 } from "lucide-react";
+import { Coffee, MapPin, GraduationCap } from "lucide-react";
 import { SectionHeader, Prompt } from "./SectionHeader";
 import { Reveal } from "./Reveal";
 
 const facts: [typeof Coffee, string, string][] = [
-  [GraduationCap, "semestre", "9° · Ingeniería de Sistemas"],
-  [FolderGit2, "repos_públicos", "14 en GitHub"],
+  [GraduationCap, "carrera", "Ingeniería de Sistemas · 9.º sem."],
   [MapPin, "ubicación", "Medellín, Colombia"],
   [Coffee, "combustible", "café, todos los días"],
 ];
@@ -24,23 +23,23 @@ export function About() {
         <Reveal className="max-w-2xl">
           <Prompt>cat about.md</Prompt>
           <p className="mt-5 text-[17px] leading-[1.85] text-primary">
-            <span className="text-accent-green">Desarrollador de software</span>{" "}
-            backend y QA automation, cursando el último tramo de{" "}
+            <span className="text-accent-green">Software developer</span> en
+            formación, cursando el 9.º semestre de{" "}
             <span className="text-accent-green">Ingeniería de Sistemas</span>{" "}
-            en la Universidad de Antioquia y trabajando actualmente como{" "}
+            en la Universidad de Antioquia. Trabajo como{" "}
             <span className="text-accent-purple">
               Auxiliar de Programación
             </span>{" "}
-            en la Sede de Investigación Universitaria (SIU–UdeA). Me apasiona
-            el desarrollo <span className="text-accent-green">backend</span>,
-            la <span className="text-accent-green">automatización</span> de
-            procesos y el análisis de{" "}
-            <span className="text-accent-green">datos</span>.
+            en la Sede de Investigación Universitaria (SIU–UdeA) desde julio
+            de 2025.
           </p>
           <p className="mt-4 text-[17px] leading-[1.85] text-muted">
-            Creo en el código limpio, las buenas prácticas de ingeniería y el
-            aprendizaje constante. Cuando no estoy programando, estoy
-            aprendiendo algo nuevo que pronto se convertirá en un proyecto.
+            Me enfoco en desarrollo{" "}
+            <span className="text-accent-green">backend</span> y APIs, con
+            experiencia práctica en automatización, testing y una base sólida
+            en bases de datos, CI/CD y sistemas. Busco oportunidades de{" "}
+            <span className="text-accent-green">prácticas profesionales</span>{" "}
+            en desarrollo de software.
           </p>
         </Reveal>
 

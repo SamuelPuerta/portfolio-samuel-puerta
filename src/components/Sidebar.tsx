@@ -7,6 +7,8 @@ import {
   TerminalSquare,
   GitBranch,
   Link2,
+  GraduationCap,
+  Lightbulb,
 } from "lucide-react";
 import { links } from "@/lib/data";
 import { PhotoFrame } from "./PhotoFrame";
@@ -14,10 +16,12 @@ import { PhotoFrame } from "./PhotoFrame";
 const sections = [
   { href: "#top", index: "00", label: "whoami", icon: TerminalSquare },
   { href: "#about", index: "01", label: "about", icon: User },
-  { href: "#stack", index: "02", label: "stack", icon: Cpu },
-  { href: "#proyectos", index: "03", label: "proyectos", icon: FolderGit2 },
-  { href: "#experiencia", index: "04", label: "experiencia", icon: Briefcase },
-  { href: "#contacto", index: "05", label: "contacto", icon: Mail },
+  { href: "#experience", index: "02", label: "experience", icon: Briefcase },
+  { href: "#aplicado", index: "03", label: "applied", icon: Lightbulb },
+  { href: "#proyectos", index: "04", label: "projects", icon: FolderGit2 },
+  { href: "#stack", index: "05", label: "stack", icon: Cpu },
+  { href: "#education", index: "06", label: "education", icon: GraduationCap },
+  { href: "#contacto", index: "07", label: "contact", icon: Mail },
 ];
 
 export function Sidebar() {
@@ -69,9 +73,9 @@ export function Sidebar() {
             <span className="cursor-block" />
           </a>
           <h2 className="mt-2.5 text-sm leading-relaxed text-muted">
-            Desarrollador Backend & QA
+            Software Developer
             <br />
-            backend · datos · automatización
+            backend · APIs · automatización
           </h2>
 
           <div className="mt-4 flex items-center gap-2 text-xs text-accent-green">
@@ -79,7 +83,7 @@ export function Sidebar() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-green opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-green" />
             </span>
-            abierto a oportunidades · disponible
+            abierto a oportunidades · prácticas profesionales
           </div>
 
           <nav aria-label="Secciones" className="mt-14 flex flex-col gap-1">

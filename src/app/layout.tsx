@@ -3,16 +3,27 @@ import "@fontsource-variable/jetbrains-mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Samuel Puerta Patiño — Desarrollador Backend & QA",
+  title: "Samuel Puerta — Software Developer | Backend",
   description:
-    "Desarrollador de software backend y QA automation — Auxiliar de Programación en la SIU–UdeA. Java · Spring Boot · Python · Go · Docker · CI/CD.",
-  metadataBase: new URL("https://samuelpuerta.vercel.app"),
+    "Software Developer enfocado en backend (Java, Spring Boot, Python). Estudiante de Ingeniería de Sistemas (UdeA) y Auxiliar de Programación en la SIU. Especializado en APIs REST, bases de datos, Docker, testing y automatización.",
+  metadataBase: new URL("https://samuel-puerta.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Samuel Puerta Patiño — Desarrollador Backend & QA",
+    title: "Samuel Puerta — Software Developer | Backend",
     description:
-      "Desarrollo backend, automatización de procesos, testing y análisis de datos. Java · Spring Boot · Python · Go · Docker.",
+      "Software Developer enfocado en backend (Java, Spring Boot, Python). Estudiante de Ingeniería de Sistemas (UdeA) y Auxiliar de Programación en la SIU.",
+    url: "https://samuel-puerta.vercel.app",
+    siteName: "Samuel Puerta — Portfolio",
     type: "website",
     locale: "es_CO",
+  },
+  twitter: {
+    card: "summary",
+    title: "Samuel Puerta — Software Developer | Backend",
+    description:
+      "Software Developer enfocado en backend (Java, Spring Boot, Python). Estudiante de Ingeniería de Sistemas (UdeA).",
   },
 };
 

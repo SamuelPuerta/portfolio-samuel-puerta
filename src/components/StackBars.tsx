@@ -32,7 +32,7 @@ const techIcons: Record<string, typeof Braces> = {
   REST: Radio,
   JWT: ShieldCheck,
   Maven: Boxes,
-  JUnit5: FlaskConical,
+  "JUnit 5": FlaskConical,
   Mockito: Bug,
   Cucumber: GraduationCap,
   "Serenity BDD": Bug,
@@ -43,14 +43,19 @@ const techIcons: Record<string, typeof Braces> = {
   "scikit-learn": BrainCircuit,
   Docker: Container,
   "GitHub Actions": GitBranch,
-  "SonarCloud/Qube": ShieldCheck,
-  JaCoCo: ShieldCheck,
+  "CI/CD": Workflow,
+  SonarQube: ShieldCheck,
+  SonarCloud: ShieldCheck,
+  Snyk: ShieldCheck,
   C: Braces,
   Go: Braces,
+  Linux: Cpu,
   pthreads: CircuitBoard,
   sockets: CircuitBoard,
   PostgreSQL: Database,
+  MySQL: Database,
   MongoDB: Database,
+  SQL: Database,
   Flyway: Layers,
 };
 
@@ -61,7 +66,7 @@ export function StackBars() {
       className="border-b border-border bg-surface/30 px-6 py-20 sm:px-10 lg:px-16"
     >
       <SectionHeader
-        index="02"
+        index="05"
         path="~/stack"
         caption="Herramientas con las que trabajo a diario."
       />

@@ -11,22 +11,23 @@ export function Contact() {
       className="relative overflow-hidden bg-surface/30 px-6 py-20 sm:px-10 lg:px-16"
     >
       <SectionHeader
-        index="05"
-        path="~/contacto"
+        index="07"
+        path="~/contact"
         caption="Hablemos — respondo rápido."
       />
       <Reveal>
         <Prompt>echo $CONTACTO</Prompt>
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-primary">
-          Si tienes un proyecto interesante, una oportunidad laboral o una
-          idea genial — escríbeme.
+          Si tienes una oportunidad de prácticas, un proyecto interesante o una
+          idea — escríbeme.
         </p>
         <div className="mt-8 flex flex-wrap gap-3 text-sm">
           <a
             href={`mailto:${links.email}`}
             className="flex items-center gap-2 border border-accent-green px-5 py-3 text-accent-green hover:bg-accent-green hover:text-base transition-colors"
+            aria-label={`Enviar correo a ${links.email}`}
           >
-            <Mail className="h-4 w-4" />
+            <Mail className="h-4 w-4" aria-hidden="true" />
             {links.email}
           </a>
           <a
@@ -35,8 +36,8 @@ export function Contact() {
             rel="noreferrer"
             className="flex items-center gap-2 border border-border px-5 py-3 text-primary hover:border-accent-purple hover:text-accent-purple transition-colors"
           >
-            <Link2 className="h-4 w-4" />
-            linkedin/in/samuel-puerta
+            <Link2 className="h-4 w-4" aria-hidden="true" />
+            linkedin/in/samuelpuerta-softwaredev
           </a>
           <a
             href={links.github}
@@ -44,7 +45,7 @@ export function Contact() {
             rel="noreferrer"
             className="flex items-center gap-2 border border-border px-5 py-3 text-primary hover:border-accent-purple hover:text-accent-purple transition-colors"
           >
-            <GitBranch className="h-4 w-4" />
+            <GitBranch className="h-4 w-4" aria-hidden="true" />
             github/SamuelPuerta
           </a>
           <a
@@ -53,7 +54,7 @@ export function Contact() {
             rel="noreferrer"
             className="flex items-center gap-2 border border-accent-purple px-5 py-3 text-accent-purple hover:bg-accent-purple hover:text-base transition-colors"
           >
-            <FileText className="h-4 w-4" />
+            <FileText className="h-4 w-4" aria-hidden="true" />
             descargar cv ↓
           </a>
         </div>

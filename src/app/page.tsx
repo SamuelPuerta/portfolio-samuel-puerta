@@ -1,9 +1,11 @@
 import { Sidebar } from "@/components/Sidebar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { StackBars } from "@/components/StackBars";
-import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
+import { AppliedProject } from "@/components/AppliedProject";
+import { Projects } from "@/components/Projects";
+import { StackBars } from "@/components/StackBars";
+import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
@@ -13,9 +15,11 @@ export default function Home() {
       <main className="relative z-10 max-w-[1600px] lg:ml-80">
         <Hero />
         <About />
-        <StackBars />
-        <Projects />
         <Experience />
+        <AppliedProject />
+        <Projects />
+        <StackBars />
+        <Education />
         <Contact />
       </main>
     </div>
