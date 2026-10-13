@@ -1,5 +1,7 @@
 # Samuel Puerta Patiño — Portafolio
 
+##RAMA CREADA PARA VERSIONAR EL DESPLIEGUE EN AWS AMPLIFY
+
 Sitio de portafolio construido con Next.js (App Router) + TypeScript + Tailwind CSS,
 pensado para desplegarse en Vercel con el flujo del Laboratorio 1 de Cloud Computing (UdeA).
 
