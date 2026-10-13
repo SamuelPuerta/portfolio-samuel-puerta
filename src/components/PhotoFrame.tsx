@@ -33,10 +33,10 @@ export function PhotoFrame({
 
   return (
     <div
-      className={`group w-full ${maxWidth} border border-border transition-colors hover:border-accent-green/70 ${className}`}
+      className={`group w-full ${maxWidth} border-2 border-orange-500 shadow-[0_0_24px_rgba(255,153,0,0.25)] transition-colors hover:border-orange-400 hover:shadow-[0_0_32px_rgba(255,153,0,0.35)] ${className}`}
     >
-      <div className="flex items-center gap-2 border-b border-border bg-surface px-3 py-2">
-        <span className="h-1.5 w-1.5 rounded-full bg-accent-green" />
+      <div className="flex items-center gap-2 border-b border-orange-500/40 bg-surface px-3 py-2">
+        <span className="h-1.5 w-1.5 rounded-full bg-orange-500" />
         <span className="text-[11px] text-muted">{label}</span>
       </div>
       <div className="relative overflow-hidden bg-surface" style={{ aspectRatio: "1066 / 1599" }}>
@@ -49,11 +49,11 @@ export function PhotoFrame({
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent-green/15 via-transparent to-accent-purple/10 mix-blend-overlay"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-orange-500/20 via-transparent to-accent-purple/10 mix-blend-overlay"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-0 shadow-[inset_0_0_40px_rgba(67,227,122,0.35)] transition-opacity duration-500 group-hover:opacity-100"
+          className="pointer-events-none absolute inset-0 opacity-0 shadow-[inset_0_0_40px_rgba(255,153,0,0.35)] transition-opacity duration-500 group-hover:opacity-100"
         />
       </div>
     </div>
