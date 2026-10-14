@@ -28,10 +28,13 @@ export function Hero() {
           </p>
 
           <h1
-            className="boot-line glow-green mt-3 text-4xl font-medium leading-tight text-primary sm:text-5xl"
+            className="boot-line glow-green mt-3 flex flex-wrap items-center gap-x-4 gap-y-3 text-4xl font-medium leading-tight text-primary sm:text-5xl"
             style={{ animationDelay: "90ms" }}
           >
             Samuel Puerta
+            <span className="inline-flex items-center gap-2 border border-blue-500/70 bg-blue-500/10 px-3 py-1 font-mono text-sm font-normal tracking-widest text-blue-400 shadow-[0_0_18px_rgba(59,130,246,0.35)]">
+              ▲ AZURE SWA Deploy
+            </span>
           </h1>
 
           <p
